@@ -17,7 +17,7 @@ module.exports = class Order{
                 this.stateCur = OrderState.DRINKS;
                 break;
             case OrderState.DRINKS:
-                if(sInput.toLowerCase != "no"){
+                if(sInput.toLowerCase() != "no"){
                     this.orderItems.push(sInput);
                 }
                 aReturn.push("Thank-you for your order of");
